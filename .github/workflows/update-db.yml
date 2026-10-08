@@ -5,6 +5,9 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+defaults:
+  run:
+    working-directory: chequealo-db
 jobs:
   build:
     runs-on: ubuntu-latest
